@@ -1,4 +1,4 @@
-package com.fastcampus.kotlinspring.todo.api.model;
+package me.janek.todo.api.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,11 +1,12 @@
-package com.fastcampus.kotlinspring.todo.api;
+package me.janek.todo.api;
 
-import com.fastcampus.kotlinspring.todo.api.model.TodoListResponse;
-import com.fastcampus.kotlinspring.todo.api.model.TodoRequest;
-import com.fastcampus.kotlinspring.todo.api.model.TodoResponse;
-import com.fastcampus.kotlinspring.todo.domain.Todo;
-import com.fastcampus.kotlinspring.todo.service.TodoService;
+import me.janek.todo.api.model.TodoListResponse;
+import me.janek.todo.api.model.TodoRequest;
+import me.janek.todo.api.model.TodoResponse;
+import me.janek.todo.domain.Todo;
+import me.janek.todo.service.TodoService;
 import java.util.List;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

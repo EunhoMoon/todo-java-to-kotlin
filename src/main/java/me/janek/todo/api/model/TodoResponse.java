@@ -1,6 +1,6 @@
-package com.fastcampus.kotlinspring.todo.api.model;
+package me.janek.todo.api.model;
 
-import com.fastcampus.kotlinspring.todo.domain.Todo;
+import me.janek.todo.domain.Todo;
 import java.time.LocalDateTime;
 import lombok.Builder;
 import lombok.Data;

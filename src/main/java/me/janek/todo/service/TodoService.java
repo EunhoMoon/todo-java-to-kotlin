@@ -1,8 +1,8 @@
-package com.fastcampus.kotlinspring.todo.service;
+package me.janek.todo.service;
 
-import com.fastcampus.kotlinspring.todo.domain.Todo;
-import com.fastcampus.kotlinspring.todo.domain.TodoRepository;
-import com.fastcampus.kotlinspring.todo.api.model.TodoRequest;
+import me.janek.todo.domain.Todo;
+import me.janek.todo.domain.TodoRepository;
+import me.janek.todo.api.model.TodoRequest;
 import java.time.LocalDateTime;
 import java.util.List;
 import org.springframework.data.domain.Sort;
