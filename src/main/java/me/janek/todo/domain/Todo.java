@@ -12,11 +12,11 @@ import javax.persistence.Table;
 import lombok.*;
 
 
+@Getter
+@Entity
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Builder
-@Entity
 @Table(name = "todos")
 public class Todo {
 
@@ -46,4 +46,5 @@ public class Todo {
         this.done = done != null && done;
         this.updatedAt = LocalDateTime.now();
     }
+
 }
