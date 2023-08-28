@@ -5,6 +5,7 @@ import me.janek.todo.api.model.TodoRequest;
 import me.janek.todo.api.model.TodoResponse;
 import me.janek.todo.domain.Todo;
 import me.janek.todo.service.TodoService;
+
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
@@ -46,8 +47,10 @@ public class TodoController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<TodoResponse> update(@PathVariable Long id,
-                                               @RequestBody TodoRequest request) {
+    public ResponseEntity<TodoResponse> update(
+        @PathVariable Long id,
+        @RequestBody TodoRequest request
+    ) {
         Todo todo = todoService.update(id, request);
         return ResponseEntity.ok(TodoResponse.of(todo));
     }

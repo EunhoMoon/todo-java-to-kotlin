@@ -3,8 +3,10 @@ package me.janek.todo.service;
 import me.janek.todo.domain.Todo;
 import me.janek.todo.domain.TodoRepository;
 import me.janek.todo.api.model.TodoRequest;
+
 import java.time.LocalDateTime;
 import java.util.List;
+
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.http.HttpStatus;
@@ -51,9 +53,11 @@ public class TodoService {
         Assert.notNull(request, "TodoRequest is null");
 
         Todo todo = findById(id);
-        todo.update(request.getTitle(),
-                    request.getDescription(),
-                    request.getDone());
+        todo.update(
+            request.getTitle(),
+            request.getDescription(),
+            request.getDone()
+        );
         return todoRepository.save(todo);
     }
 
